@@ -1,0 +1,5 @@
+request_id,agent_id,tool,action,data_class,destination,approval_id,decision,reasons
+R-01,agent-fin-01,invoice_read,read,confidential,internal,,allow,policy_match
+R-02,agent-fin-01,shell,execute,restricted,internal,,deny,tool_not_allowed;restricted_action;approval_required
+R-03,agent-fin-01,ledger_write,delete,confidential,internal,APR-883,allow,policy_match
+R-04,agent-hr-02,policy_search,read,internal,external,,deny,egress_classification

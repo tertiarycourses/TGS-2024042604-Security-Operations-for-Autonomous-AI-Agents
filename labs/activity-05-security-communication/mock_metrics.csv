@@ -1,0 +1,5 @@
+metric,value,threshold,unit,owner,due,audience
+registered_agent_coverage,92,100,%,AI Platform,2026-09-30,risk
+critical_injection_success,2,0,tests,Product Security,2026-09-18,technical
+p95_containment_seconds,78,60,seconds,SOC,2026-09-20,both
+privileged_approval_coverage,100,100,%,Governance,2026-10-01,risk

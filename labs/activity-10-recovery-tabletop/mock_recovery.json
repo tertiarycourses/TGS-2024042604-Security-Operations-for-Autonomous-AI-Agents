@@ -1,0 +1,38 @@
+{
+  "incident_id": "INC-2026-014",
+  "clean_release": "rel-2026.09.12.1",
+  "recovery_gates": [
+    {
+      "gate": "Attack regression suite",
+      "target": "0 critical successes",
+      "observed": "0",
+      "pass": true
+    },
+    {
+      "gate": "Canary containment latency",
+      "target": "p95 <= 60s",
+      "observed": "54s",
+      "pass": true
+    },
+    {
+      "gate": "Trace completeness",
+      "target": ">= 99.5%",
+      "observed": "99.7%",
+      "pass": true
+    }
+  ],
+  "lessons": [
+    {
+      "gap": "Untrusted invoice text lacked provenance label",
+      "owner": "Retrieval Team",
+      "due": "2026-09-18",
+      "acceptance_test": "All retrieved chunks include trust_level and source_uri"
+    },
+    {
+      "gap": "Destination allowlist alert was not paged",
+      "owner": "SOC Engineering",
+      "due": "2026-09-16",
+      "acceptance_test": "SEV-1 deny produces pager notification within 60s"
+    }
+  ]
+}

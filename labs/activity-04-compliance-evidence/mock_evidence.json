@@ -1,0 +1,42 @@
+{
+  "requirements": [
+    {
+      "control_id": "AC-01",
+      "requirement": "Unique workload identity",
+      "owner": "IAM",
+      "max_age_days": 30
+    },
+    {
+      "control_id": "LOG-01",
+      "requirement": "Correlated tool-call logs",
+      "owner": "SOC",
+      "max_age_days": 7
+    },
+    {
+      "control_id": "IR-01",
+      "requirement": "Tested agent kill switch",
+      "owner": "Platform",
+      "max_age_days": 90
+    }
+  ],
+  "evidence": [
+    {
+      "control_id": "AC-01",
+      "evidence_id": "E-101",
+      "age_days": 12,
+      "status": "pass"
+    },
+    {
+      "control_id": "LOG-01",
+      "evidence_id": "E-102",
+      "age_days": 2,
+      "status": "pass"
+    },
+    {
+      "control_id": "IR-01",
+      "evidence_id": "E-103",
+      "age_days": 118,
+      "status": "pass"
+    }
+  ]
+}

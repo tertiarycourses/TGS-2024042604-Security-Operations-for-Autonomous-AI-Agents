@@ -1,0 +1,31 @@
+{
+  "incident_id": "INC-2026-014",
+  "severity": "SEV-1",
+  "detected_at": "2026-09-11T08:00:22Z",
+  "agent_id": "agent-fin-01",
+  "containment_actions": [
+    {
+      "sequence": 1,
+      "action": "disable_agent",
+      "status": "confirmed"
+    },
+    {
+      "sequence": 2,
+      "action": "revoke_tokens",
+      "status": "confirmed"
+    },
+    {
+      "sequence": 3,
+      "action": "block_destination",
+      "target": "paste-unknown.example",
+      "status": "confirmed"
+    },
+    {
+      "sequence": 4,
+      "action": "preserve_evidence",
+      "trace_id": "T-100",
+      "status": "confirmed"
+    }
+  ],
+  "safe_to_investigate": true
+}

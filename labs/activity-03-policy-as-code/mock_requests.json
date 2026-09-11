@@ -1,0 +1,38 @@
+[
+  {
+    "request_id": "R-01",
+    "agent_id": "agent-fin-01",
+    "tool": "invoice_read",
+    "action": "read",
+    "data_class": "confidential",
+    "destination": "internal",
+    "approval_id": ""
+  },
+  {
+    "request_id": "R-02",
+    "agent_id": "agent-fin-01",
+    "tool": "shell",
+    "action": "execute",
+    "data_class": "restricted",
+    "destination": "internal",
+    "approval_id": ""
+  },
+  {
+    "request_id": "R-03",
+    "agent_id": "agent-fin-01",
+    "tool": "ledger_write",
+    "action": "delete",
+    "data_class": "confidential",
+    "destination": "internal",
+    "approval_id": "APR-883"
+  },
+  {
+    "request_id": "R-04",
+    "agent_id": "agent-hr-02",
+    "tool": "policy_search",
+    "action": "read",
+    "data_class": "internal",
+    "destination": "external",
+    "approval_id": ""
+  }
+]

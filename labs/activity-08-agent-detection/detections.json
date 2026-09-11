@@ -1,0 +1,15 @@
+{
+  "alerts": [
+    {
+      "trace_id": "T-100",
+      "agent_id": "agent-fin-01",
+      "severity": "high",
+      "reasons": [
+        "repeated_denials",
+        "new_destination",
+        "sensitive_read_then_egress"
+      ]
+    }
+  ],
+  "event_count": 5
+}

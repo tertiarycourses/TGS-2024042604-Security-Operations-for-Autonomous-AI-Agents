@@ -1,0 +1,46 @@
+[
+  {
+    "agent_id": "agent-fin-01",
+    "owner": "Finance Automation",
+    "purpose": "Reconcile invoices",
+    "model": "approved-model-v3",
+    "tools": [
+      "invoice_read",
+      "ledger_write"
+    ],
+    "data_classes": [
+      "confidential"
+    ],
+    "status": "active",
+    "risk_tier": 3
+  },
+  {
+    "agent_id": "agent-hr-02",
+    "owner": "People Operations",
+    "purpose": "Answer policy questions",
+    "model": "approved-model-v3",
+    "tools": [
+      "policy_search"
+    ],
+    "data_classes": [
+      "internal"
+    ],
+    "status": "active",
+    "risk_tier": 1
+  },
+  {
+    "agent_id": "agent-ops-03",
+    "owner": "",
+    "purpose": "Restart failed jobs",
+    "model": "experimental-model",
+    "tools": [
+      "job_admin",
+      "shell"
+    ],
+    "data_classes": [
+      "restricted"
+    ],
+    "status": "active",
+    "risk_tier": 4
+  }
+]

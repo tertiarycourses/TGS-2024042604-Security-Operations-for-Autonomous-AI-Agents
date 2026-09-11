@@ -1,0 +1,4 @@
+risk_id,scenario,frequency_per_year,loss_sgd,control_effectiveness_pct,appetite_sgd
+AR-01,Indirect injection triggers outbound message,4,45000,65,50000
+AR-02,Compromised tool leaks restricted data,1.2,180000,40,50000
+AR-03,Runaway loop exhausts model budget,12,6000,80,25000

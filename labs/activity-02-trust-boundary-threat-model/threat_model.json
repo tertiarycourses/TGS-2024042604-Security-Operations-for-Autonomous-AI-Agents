@@ -1,0 +1,56 @@
+{
+  "zones": [
+    "user",
+    "agent-runtime",
+    "policy-gateway",
+    "tool-zone",
+    "external"
+  ],
+  "findings": [
+    {
+      "flow_id": "F-01",
+      "source": "user",
+      "target": "agent-runtime",
+      "asset": "support request",
+      "authn": true,
+      "authz": true,
+      "encrypted": true,
+      "logged": true,
+      "missing_controls": [],
+      "risk_score": 5,
+      "decision": "accept"
+    },
+    {
+      "flow_id": "F-02",
+      "source": "agent-runtime",
+      "target": "tool-zone",
+      "asset": "restricted record",
+      "authn": true,
+      "authz": false,
+      "encrypted": true,
+      "logged": true,
+      "missing_controls": [
+        "authz"
+      ],
+      "risk_score": 10,
+      "decision": "remediate"
+    },
+    {
+      "flow_id": "F-03",
+      "source": "tool-zone",
+      "target": "external",
+      "asset": "summary",
+      "authn": false,
+      "authz": false,
+      "encrypted": true,
+      "logged": false,
+      "missing_controls": [
+        "authn",
+        "authz",
+        "logged"
+      ],
+      "risk_score": 20,
+      "decision": "remediate"
+    }
+  ]
+}

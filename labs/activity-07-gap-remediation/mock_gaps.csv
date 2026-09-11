@@ -1,0 +1,5 @@
+gap_id,gap,severity,risk_reduction,cost_sgd,effort_days,overdue,dependency
+G-01,No tool metadata signature verification,5,85,18000,12,true,registry
+G-02,Shared service identity across three agents,5,75,24000,18,false,IAM
+G-03,No correlated trace_id in SaaS connector,3,45,9000,8,true,connector
+G-04,Quarterly tabletop not scheduled,2,25,4000,3,false,people

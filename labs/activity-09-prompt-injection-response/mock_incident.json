@@ -1,0 +1,15 @@
+{
+  "incident_id": "INC-2026-014",
+  "detected_at": "2026-09-11T08:00:22Z",
+  "agent_id": "agent-fin-01",
+  "trace_id": "T-100",
+  "severity": "SEV-1",
+  "cause": "Indirect prompt injection in a retrieved invoice note",
+  "requested_actions": [
+    "disable_agent",
+    "revoke_tokens",
+    "block_destination",
+    "preserve_evidence"
+  ],
+  "destination": "paste-unknown.example"
+}

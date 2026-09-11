@@ -1,0 +1,41 @@
+{
+  "zones": [
+    "user",
+    "agent-runtime",
+    "policy-gateway",
+    "tool-zone",
+    "external"
+  ],
+  "flows": [
+    {
+      "flow_id": "F-01",
+      "source": "user",
+      "target": "agent-runtime",
+      "asset": "support request",
+      "authn": true,
+      "authz": true,
+      "encrypted": true,
+      "logged": true
+    },
+    {
+      "flow_id": "F-02",
+      "source": "agent-runtime",
+      "target": "tool-zone",
+      "asset": "restricted record",
+      "authn": true,
+      "authz": false,
+      "encrypted": true,
+      "logged": true
+    },
+    {
+      "flow_id": "F-03",
+      "source": "tool-zone",
+      "target": "external",
+      "asset": "summary",
+      "authn": false,
+      "authz": false,
+      "encrypted": true,
+      "logged": false
+    }
+  ]
+}

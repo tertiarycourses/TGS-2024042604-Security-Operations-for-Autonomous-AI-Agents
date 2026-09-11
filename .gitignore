@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.claude/
+assessment/
+reference/
+rendered/
+qa/
+QA-REPORT*.md
+courseware/assets/
+courseware/technical-anchor-*.csv
+**/__pycache__/
+*.pyc
+~$*
